@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import React, { useRef, useState } from 'react';
 import './App.css';
 import firebase from './Firebase';
+import Login from './Login';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -14,15 +15,10 @@ function App() {
 
 return (
     <div className="App">
-      <header>
-        <h1>💬</h1>
-      </header>
-
+    <Login />
     </div>
   );
 }
-
-function Login() {}
 
 function ChatRoom() {}
 
