@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import './App.css';
 import firebase from './Firebase';
 import Login from './Login';
+import InputData from './InputData'
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -18,11 +19,6 @@ return (
     <Login />
     </div>
   );
-}
-
-function ChatRoom() {}
-
-function ChatMessage(props) {
 }
 
 export default App;
